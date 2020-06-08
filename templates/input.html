@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <h1 class="text-center">Fleet Payout Tool</h1>
+        <form>
+            <div class="container form-group">
+                <label for="total_isk">Total ISK</label>
+                <small class="form-text text-muted">
+                    The total ISK from the operation
+                </small>
+                <br>
+                <input class="form-control" type="text" id="total_isk" name="total_isk">
+                
+                <br>
+                <label for="tenure_modifier">Tenure Modifier</label>
+                <small class="form-text text-muted">
+                    Decreases payout for newcomers by a certain modifier, defaults to 0.35.
+                </small>
+                <br>
+                <input class="form-control" type="text" id="tenure_modifier" name="tenure_modifier">
+                <br>
+                <label for="finder">Finder</label>
+                <small class="form-text text-muted">
+                    Finders fee is 10%
+                </small>
+                <br>
+                <input class="form-control" type="text" id="finder" name="finder">
+                <br>
+                <label for="names">Names:</label>
+                <br>
+                <textarea class="form-control" id="names" name="names" rows="4" cols="50">
+Name,True (are they tenured)
+Name,True 
+Name,False
+            </textarea>
+            
+            <hr>
+            <button class="btn btn-primary btn-block" type="submit" formmethod="post">Submit Data</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
